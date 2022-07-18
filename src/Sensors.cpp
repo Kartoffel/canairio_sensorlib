@@ -907,13 +907,13 @@ void Sensors::bme680Read() {
 }
 
 void Sensors::aht10Read() {
-    float humi1 = aht10.readHumidity();
-    float temp1 = aht10.readTemperature();
+    float humi1 = aht20.readHumidity();
+    float temp1 = aht20.readTemperature();
     if (humi1 != 255) humi = humi1;
     if (temp1 != 255) {
         temp = temp1-toffset;
         dataReady = true;
-        DEBUG("-->[SLIB] AHT10 read\t\t: done!");
+        DEBUG("-->[SLIB] AHT20 read\t\t: done!");
         unitRegister(UNIT::TEMP);
         unitRegister(UNIT::HUM);
     }
@@ -1416,8 +1416,8 @@ void Sensors::bme680Init() {
 
 void Sensors::aht10Init() {
     sensorAnnounce(SENSORS::SAHT10);
-    aht10 = AHT10(AHT10_ADDRESS_0X38);
-    if (!aht10.begin()) return; 
+    aht20 = AHTxx(AAHTXX_ADDRESS_X38, AHT2x_SENSOR);
+    if (!aht20.begin()) return; 
     sensorRegister(SENSORS::SAHT10);
 }
 
