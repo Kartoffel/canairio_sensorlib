@@ -81,7 +81,7 @@
     {"name":"Adafruit SCD30", "owner":"adafruit","version":"1.0.8"},
     {"name":"Adafruit BusIO", "owner":"adafruit","version":"1.11.6"},
     {"name":"AM232X", "owner":"robtillaart", "version":"0.4.1"},
-    {"name":"AHT10", "owner":"enjoyneering","version":"1.1.0"},
+    {"name":"AHTxx", "owner":"enjoyneering","version":"1.1.6"},
     {"name":"sps30", "owner":"paulvha","version":"1.4.12"},
     {"name":"MH-Z19", "owner":"wifwaf", "version":"1.5.3"},
     {"name":"Sensirion Core","owner":"sensirion","version":"0.5.3"},

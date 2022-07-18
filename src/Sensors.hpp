@@ -1,7 +1,7 @@
 #ifndef Sensors_hpp
 #define Sensors_hpp
 
-#include <AHT10.h>
+#include <AHTxx.h>
 #include <AM232X.h>
 #include <Adafruit_BME280.h>
 #include <Adafruit_BME680.h>
@@ -178,7 +178,7 @@ class Sensors {
     // BME680 (Humidity, Gas, IAQ, Pressure, Altitude and Temperature)
     Adafruit_BME680 bme680;
     // AHT10
-    AHT10 aht10;
+    AHTxx aht20;
     // SHT31
     Adafruit_SHT31 sht31;
     // DHT sensor
